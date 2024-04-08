@@ -7,7 +7,11 @@
     <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-    <img src="background.png" class="bg">
-    
+    <section>
+    <img src="../IMG/Background.png" class="bg">
+    <?php include 'barre-menu.php';?>
+    <div class="accueil"></div>
+    </section>
+
 </body>
 </htmlkuj 
