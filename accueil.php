@@ -9,9 +9,15 @@
 <body>
     <section>
     <img src="../IMG/Background.png" class="bg">
-    <?php include 'barre-menu.php';?>
-    <div class="accueil"></div>
+    <?php 
+        include 'barre-menu.php';
+    ?>
+    <div class="accueil">
+        <h1>Voici le site de réservation pour x escape game</h1>
+        <a href="reservation.php">Reservé ICI</a>
+        <br>
+    </div>
     </section>
 
 </body>
-</htmlkuj 
+</html>
