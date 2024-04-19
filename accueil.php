@@ -8,7 +8,7 @@
 </head>
 <body>
     <section>
-    <img src="../IMG/Background.png" class="bg">
+    <img src="IMG/Background.png" class="bg">
     <?php 
         include 'barre-menu.php';
     ?>
@@ -16,8 +16,10 @@
         <h1>Voici le site de réservation pour x escape game</h1>
         <a href="reservation.php">Reservé ICI</a>
         <br>
+        <!--Il faudra rajouter des trucs pour decorer -->
     </div>
     </section>
-
+    
 </body>
 </html>
+

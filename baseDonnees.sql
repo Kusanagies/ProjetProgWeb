@@ -31,3 +31,14 @@ CREATE TABLE `Users` (
     `Email` varchar(255) NOT NULL, 
     `MotDePasse` varchar(255) NOT NULL
 ); 
+
+CREATE TABLE `reservations` (
+  `res_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `res_date` date,
+  `res_slot` varchar(32) DEFAULT NULL,
+  `res_name` varchar(255) NOT NULL,
+  `res_email` varchar(255) NOT NULL,
+  `res_tel` varchar(60) NOT NULL,
+  `res_notes` text DEFAULT NULL,
+  PRIMARY KEY (`res_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

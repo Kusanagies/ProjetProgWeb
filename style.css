@@ -1,0 +1,82 @@
+/* Resetting default browser styles */
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting default font family and size */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Styling the header */
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styling links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Styling the main section */
+section {
+    position: relative;
+    padding: 20px;
+}
+
+/* Styling the background image */
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5; /* Adjust as needed */
+}
+
+/* Styling the navigation bar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+/* Styling the menu items */
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Styling the main content */
+.accueil {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
