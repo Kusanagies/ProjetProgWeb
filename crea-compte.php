@@ -1,13 +1,14 @@
 <?php
 session_start();
 include 'connexion-BDD.php';
-$sql = "SELECT * FROM user WHERE nomutilisateur='$username'";
-$result = $conn->query($sql);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['nomutilisateur'];
     $email = $_POST['email'];
     $password = $_POST['motdepasse'];
+    //Les variables pour la verification du pseudo
+    $sql = "SELECT * FROM client WHERE nomutilisateur='$username'";
+    $result = $conn->query($sql);
 
     // Validate input fields
     if (empty($username) || empty($email) || empty($password)) {
@@ -17,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             echo "Nom d'utilisateur déjà utilisé.";
         } else {
             // Insertion de l'utilisateur dans la base de données
-            $sql = "INSERT INTO user (nomutilisateur, email, motdepasse) VALUES ('$username', '$email', '$password')";
+            $sql = "INSERT INTO client (nomutilisateur, email, motdepasse) VALUES ('$username', '$email', '$password')";
     
             if ($conn->query($sql) === TRUE) {
             header('Location: compte.php');

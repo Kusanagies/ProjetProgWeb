@@ -10,10 +10,9 @@ CREATE TABLE Jeux (
 
 CREATE TABLE client(
 	id_client int AUTO_INCREMENT PRIMARY KEY,
-    nom_client text(50),
-    prenom_clinet text(50),
+    nomutilisateur text(50),
     email text(255) NOT NULL,
-    MotdePasse text(255) NOT NULL
+    motdepasse text(255) NOT NULL
 );
 CREATE TABLE Commandes(
 	id_commande int AUTO_INCREMENT PRIMARY KEY,
@@ -34,5 +33,6 @@ CREATE TABLE reservation(
 );
     
     
-INSERT INTO Jeux VALUES ("Avion","10");
-INSERT INTO Jeux VALUES ("Helicoptere","60");
+INSERT INTO Jeux VALUES (132,"Avion","10");
+INSERT INTO Jeux VALUES (321,"Helicoptere","60");
+
