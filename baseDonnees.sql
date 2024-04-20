@@ -34,3 +34,5 @@ CREATE TABLE reservation(
 );
     
     
+INSERT INTO Jeux VALUES ("Avion","10");
+INSERT INTO Jeux VALUES ("Helicoptere","60");
