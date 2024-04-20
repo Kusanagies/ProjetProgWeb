@@ -1,9 +1,11 @@
 <?php
 session_start();
 // Vérifier si l'utilisateur est connecté
-if (isset($_SESSION['nomutilisateur'])) {
+if (isset($_SESSION['id_client'])) {
   // Si l'utilisateur est connecté, afficher le contenu de la page
 ?>
+
+
   <!DOCTYPE html>
   <html>
 
@@ -17,7 +19,7 @@ if (isset($_SESSION['nomutilisateur'])) {
       <?php include 'barre-menu.php'; ?>
     </section>
     <div class="container">
-      <h1>Bienvenue dans votre espace, <?= $_SESSION['nomutilisateur'] ?> !</h1>
+      <h1>Bienvenue dans votre espace, <?= $_SESSION['id_client'] ?> !</h1>
       <form action='deco-compte.php' method='post'>
         <input type='submit' value='Déconnexion'>
       </form>

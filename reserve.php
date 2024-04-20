@@ -1,34 +1,33 @@
+
 <?php
-class Reservation {
-  private $pdo; // Objet PDO
-  private $stmt; // Requête SQL
-  public $error; // Message d'erreur
+session_start();
+include 'connexion-BDD.php';
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Récupérez la date sélectionnée depuis le formulaire
+    $selectedDate = $_POST["date"];
+    $idJeux = $_POST["idJeux"]; // Récupérez l'ID du jeu
+    
+    // Connexion à la base de données (remplacez les valeurs par celles de votre configuration)
+    include 'connexion-BDD.php';
 
-  public function __construct() {
-    $this->pdo = new PDO(
-      "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME . ";charset=" . DB_CHARSET,
-      DB_USER,
-      DB_PASSWORD,
-      [
-        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_NAMED
-      ]
-    );
-  }
-
-  // Méthode pour insérer une réservation
-  public function inserer($date, $slot, $name, $email, $tel, $notes) {
-    try {
-      $this->stmt = $this->pdo->prepare("
-        INSERT INTO `reservations` (`res_date`, `res_slot`, `res_name`, `res_email`, `res_tel`, `res_notes`)
-        VALUES (?, ?, ?, ?, ?, ?)
-      ");
-      $this->stmt->execute([$date, $slot, $name, $email, $tel, $notes]);
-      return true;
-    } catch (PDOException $e) {
-      $this->error = $e->getMessage();
-      return false;
+    if ($conn->connect_error) {
+        die("Échec de la connexion à la base de données : " . $conn->connect_error);
     }
-  }
+
+    // Récupérez l'ID du client à partir de la session
+    if (isset($_SESSION['id_client'])) {
+        $idClient = $_SESSION['id_client'];
+    } else {
+        // L'utilisateur n'est pas connecté, redirigez-le vers la page de connexion
+        header("Location: formulaire.php");
+        exit;
+    }
+
+    // Insérez la réservation dans la table 'Commandes'
+    $sql = "INSERT INTO Commandes (ID_Jeux, id_client, dateReservation) VALUES ('$idJeux','$idClient','$selectedDate')";
+    echo $idClient;
+    
+
+    $conn->close();
 }
 ?>

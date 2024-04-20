@@ -5,13 +5,14 @@ session_start();
 
 include 'connexion-BDD.php';
 
-$sql = "SELECT * FROM user WHERE nomutilisateur='$username'";
-$result = $conn->query($sql);
+
 
 // In conn-compte.php (or your login processing script)
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['nomutilisateur'];
     $password = $_POST['motdepasse'];
+    $sql = "SELECT * FROM client WHERE nomutilisateur='$username'";
+    $result = $conn->query($sql);
 
     // Validate input fields
     if (empty($username) || empty($password)) {
@@ -21,9 +22,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($result->num_rows == 1) {
             // Utilisateur trouvé
             $user = $result->fetch_assoc();
-            if ($password == $user['MotDePasse']) {
+            if ($password == $user['motdepasse']) {
                 // Mot de passe correct
-                $_SESSION['nomutilisateur'] = $username;
+                $id_client = "SELECT id_client FROM client WHERE nomutilisateur = '$username'";
+                $_SESSION['id_client'] = $id_client;
                 header('Location: accueil.php');
                 exit();
             } else {

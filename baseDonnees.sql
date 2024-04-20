@@ -18,19 +18,11 @@ CREATE TABLE Commandes(
 	id_commande int AUTO_INCREMENT PRIMARY KEY,
     ID_Jeux int,
     id_client int,
+    dateReservation date,
     FOREIGN KEY(ID_Jeux) REFERENCES Jeux (ID_Jeux),
     FOREIGN KEY(id_client) REFERENCES client (id_client)
 );
 
-
-CREATE TABLE reservation(
-	id_reservation int AUTO_INCREMENT PRIMARY KEY,
-    id_client int,
-    dateReservation date,
-    ID_Jeux int,
-    foreign key(id_client) REFERENCES client (id_client),
-    foreign key(ID_Jeux) references Jeux(ID_Jeux)
-);
     
     
 INSERT INTO Jeux VALUES (132,"Avion","10");

@@ -1,22 +1,36 @@
 <?php
-include 'reserve.php'; // Inclure la classe
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  $reservation = new Reservation();
-  $date = $_POST['date'];
-  $slot = $_POST['slot'];
-  $name = $_POST['name'];
-  $email = $_POST['email'];
-  $tel = $_POST['tel'];
-  $notes = $_POST['notes'];
-
-  if ($reservation->inserer($date, $slot, $name, $email, $tel, $notes)) {
-    // Rediriger vers une page de confirmation
-    header('location: confirmation.php');
+session_start();
+include 'connexion-BDD.php';
+// Vérifiez si l'utilisateur est connecté
+if (!isset($_SESSION['id_client'])) {
+    // L'utilisateur n'est pas connecté, redirigez-le vers la page de connexion
+    header("Location: formulaire.php");
     exit;
-  } else {
-    //rajouter des erreurs selon la date 
-    echo "Erreur lors de l'insertion de la réservation : " . $reservation->error;
-  }
 }
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Réservation d'activité</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Réserver une date pour votre activité</h1>
+        <form action="reserve.php" method="POST">
+            <label for="Jeux">Choisissez le jeu :</label>
+            <select id="Jeux" name="idJeux">
+                <option value="1">Avion</option>
+                <option value="2">Hélicoptère</option>
+            </select>
+            <br>
+            <label for="date">Choisissez une date :</label>
+            <input type="date" id="date" name="date" required>
+            <br>
+            <input type="submit" value="Réserver">
+        </form>
+    </div>
+</body>
+</html>

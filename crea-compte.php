@@ -19,7 +19,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         } else {
             // Insertion de l'utilisateur dans la base de données
             $sql = "INSERT INTO client (nomutilisateur, email, motdepasse) VALUES ('$username', '$email', '$password')";
-    
             if ($conn->query($sql) === TRUE) {
             header('Location: compte.php');
             }
