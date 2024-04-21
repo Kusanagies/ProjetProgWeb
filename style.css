@@ -80,3 +80,38 @@ section {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+/* Réinitialisation des styles par défaut des éléments de formulaire */
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+/* Style pour les liens dans le formulaire */
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+}
+
+/* Lien non visité */
+a:link {
+    color: blue;
+}
+
+/* Lien visité */
+a:visited {
+    color: purple;
+}
+
+/* Exemple de mise en forme d'un formulaire */
+form {
+    width: 300px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    /* Ajoutez d'autres styles ici selon vos besoins */
+}
+
+/* Style pour les paragraphes */
+p {
+    line-height: 1.4;
+}
