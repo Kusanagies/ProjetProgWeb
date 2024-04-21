@@ -25,6 +25,6 @@ CREATE TABLE Commandes(
 
     
     
-INSERT INTO Jeux VALUES (132,"Avion","10");
-INSERT INTO Jeux VALUES (321,"Helicoptere","60");
+INSERT INTO Jeux VALUES (1,"Avion","10");
+INSERT INTO Jeux VALUES (2,"Helicoptere","60");
 
