@@ -20,6 +20,9 @@ if (isset($_SESSION['id_client'])) {
     </section>
     <div class="container">
       <h1>Bienvenue dans votre espace, <?= $_SESSION['id_client'] ?> !</h1>
+      
+
+
       <form action='deco-compte.php' method='post'>
         <input type='submit' value='Déconnexion'>
       </form>

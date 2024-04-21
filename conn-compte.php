@@ -24,8 +24,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $user = $result->fetch_assoc();
             if ($password == $user['motdepasse']) {
                 // Mot de passe correct
-                $id_client = "SELECT id_client FROM client WHERE nomutilisateur = '$username'";
-                $_SESSION['id_client'] = $id_client;
+                $sql1 = "SELECT id_client FROM client WHERE nomutilisateur = '$username'";
+                $result1 = $conn->query($sql1);
+                if ($result1->num_rows > 0) {
+                    $row = $result1->fetch_assoc();
+                    $id_client = $row['id_client'];
+                    $_SESSION['id_client'] = $id_client;
+                } else {
+                    // Gérez le cas où l'utilisateur n'est pas trouvé (par exemple, affichez un message d'erreur)
+                    echo "Utilisateur non trouvé.";
+                }
                 header('Location: accueil.php');
                 exit();
             } else {
