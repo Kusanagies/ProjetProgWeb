@@ -28,6 +28,7 @@ $idJeux = $conn->real_escape_string($idJeux);
 $idClient = $conn->real_escape_string($idClient);
 
 // Insérez la réservation dans la table 'Commandes'
+
 $sql = "INSERT INTO Commandes (ID_Jeux,id_client dateReservation) VALUES ('$idJeux','$idClient', '$selectedDate')";
 if ($conn->query($sql) === TRUE) {
     // Redirigez l'utilisateur vers la page de confirmation
