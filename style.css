@@ -103,10 +103,7 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 /* Réinitialisation des styles par défaut des éléments de formulaire */
-button, input, select, textarea {
-    font-family: inherit;
-    font-size: 100%;
-}
+
 
 /* Style pour les liens dans le formulaire */
 a {
