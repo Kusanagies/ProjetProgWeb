@@ -6,33 +6,7 @@
     <title>About us</title>
     <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
- <style>
-    
-  
-        
 
-        table {
-            width: 100%;
-            height: 100%;
-            border-collapse: collapse;
-        }
-
-      
-        td {
-            border: 1px solid black; 
-            text-align: center;      
-            vertical-align: middle; 
-        }
-
-       
-        tr:first-child {
-            height: 10%; 
-        }
-        
-        tr:last-child {
-            height: 90%; 
-        }
-    </style>
 <body>
 
 <table>
@@ -46,7 +20,24 @@
     </tr>
     <tr>
        
-        <td colspan="5"><h1></h1></td> 
+        <td colspan="5"><h1>Qui sommes nous ?</h1>
+        <p>Bienvenue dans notre escape game situé au coeur de Paris Nanterre.<br><br>Préparez-vous à relever des défis dans nos X salles d'évasion immersives, pleines de mystères et de mécanismes ingénieux, conçues pour vous plonger dans des univers uniques.<br><br> Que vous soyez un groupe de 4 à 10 joueurs, vous devrez collaborer, résoudre des énigmes, et trouver des indices pour vous échapper dans le temps imparti.<br><br>Nos escape games sont adaptés à tous les âges et niveaux d'expérience. Que vous soyez un groupe d'amis, une famille, ou des collègues en quête d'un team building original, des aventures mémorables vous attendent.<br><br>Relevez le défi et testez votre ingéniosité dans nos escape games… Oserez-vous vous évader avant la fin du temps imparti ?</p>
+        <h2>Notre équipe</h2>
+    </td>
+    </tr>
+    <tr>
+        <td><h3>Orhy Elgoyhen</h3></td>
+        <td><h3>Zheng Franck</h3></td>
+        <td><h3>Sylvain Huang</h3></td>
+        <td><h3>nom</h3></td>
+        <td><h3>prenom</h3></td>
+    </tr>
+    <tr>
+        <td>Gérant</td>
+        <td>Animateur</td>
+        <td>Manager</td>
+        <td>nom</td>
+        <td>prenom</td>
     </tr>
 </table>
    
