@@ -1,11 +1,6 @@
-/* Resetting default browser styles */
-body, h1, p, a {
-    margin: 0;
-    padding: 0;
-}
 
 /* Setting default font family and size */
-body {
+body,h1, p, a,html {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -204,38 +199,10 @@ p {
     background-color: #45a049;
 }
 
-.page-container {
-    display: flex;
-    flex-direction: column;
-    height: 100%; /* Prendre toute la hauteur de la page */
-}
-
-.content {
-    flex: 1; /* Prendre tout l'espace disponible sauf le bas */
-    padding: 20px; /* Espacement autour du contenu */
-}
-
-.footer {
-    text-align: center; /* Centrer le texte */
-    padding: 10px; /* Espacement autour du contenu */
-    background-color: #f1f1f1; /* Couleur de fond */
-    position: relative; /* Position relative pour le conteneur */
-    border-top: 1px solid #ccc; /* Ligne séparatrice en haut */
-}
-
-.footer form {
-    display: inline-block; /* Garde le formulaire centré */
-}
-
-.footer input {
-    padding: 10px 20px; /* Taille du bouton */
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.footer input:hover {
-    background-color: #45a049; /* Couleur au survol */
+p {
+    text-align: left; /* Alignement à gauche */
+    line-height: 1.5; /* Espace entre les lignes */
+    margin: 10px 0; /* Espacement supérieur et inférieur */
+    font-family: Arial, sans-serif; /* Police lisible */
+    font-size: 16px; /* Taille du texte */
 }
