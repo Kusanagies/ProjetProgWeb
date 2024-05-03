@@ -10,7 +10,7 @@
             padding: 0;
             height: 100%;
             width: 100%;
-            background-color: yellow;
+            background-color: rgb(220, 220, 78);
         }
 
         table {
