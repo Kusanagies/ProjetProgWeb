@@ -23,8 +23,16 @@ CREATE TABLE Commandes(
     FOREIGN KEY(id_client) REFERENCES client (id_client)
 );
 
-    
-    
+CREATE TABLE JOINUS(
+    id_personne int AUTO_INCREMENT PRIMARY KEY,
+    nom text(255),
+    prenom text(255),
+    tel int,
+    email text(255),
+    objet text(255),
+    comment text(3000)
+)
+
 INSERT INTO Jeux VALUES (1,"Avion","10");
 INSERT INTO Jeux VALUES (2,"Helicoptere","60");
 
