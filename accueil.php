@@ -7,9 +7,6 @@
     <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
  <style>
-
-
-      
         table {
             width: 100%;
             height: 100%;
@@ -36,20 +33,15 @@
 
 <table>
     <tr>
-      
-        <td><button onclick="window.location.href='reservation.php'">Réservez ICI</button></td>
-        
-        <td><button onclick="window.location.href='aboutus.php'">Et nous?</button></td>
-        <td> <button onclick="window.location.href='joinus.php'">Contacter nous</button></td>
-        <td><button onclick="window.location.href='compte.php'">Mon compte</button></td>
-        <td><button onclick="window.location.href='accueil.php'"><img src="IMG/LogoAccueil.png" alt="Logo"></button></td>
+        <?php include 'barre-menu.php'?>
     </tr>
     <tr>
-      
         <td colspan="5"><h1>Voici le site de réservation pour x escape game</h1></td> <!-- On fusionne 5 colonnes -->
+        <a href="avion-description.php"><img src="IMG/AvionDescription.webp" alt="Escape game Avion" id="imageDescription"></a>
     </tr>
 </table>
-   
+
+
 
 </body>
 </html>
