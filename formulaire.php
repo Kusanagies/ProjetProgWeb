@@ -9,16 +9,16 @@
 
 <body>
   <section style="height: 80px;">
-    <?php 
-      include 'barre-menu.php'; 
-    ?>
+    <table>
+    <td><button onclick="window.location.href='accueil.php'"><img src="IMG/LogoAccueil.png" alt="Logo"></button></td>
+  </table>
   </section>
-
-  <div style='display: flex; justify-content: center; align-items: center; height: 90vh;'>
+  <table>
+  <div style='display: flex; justify-content: center; align-items: center; height: 10vh;'>
     <div class='form-column'>
-      <div>
+      <tr><div>
         <!-- Formulaire pour les nouveaux utilisateurs -->
-        <h2>Nouvel utilisateur</h2>
+        <h2> Nouvel utilisateur</h2>
         <br>
         <form action='crea-compte.php' method='post'>
           <label for='user'>Nom d'utilisateur :</label>
@@ -32,9 +32,9 @@
 
           <input type='submit' value="S'inscrire">
         </form>
-      </div>
+      </div></tr>
       <!-- Formulaire pour les utilisateurs déjà enregistrés -->
-      <div>
+      <tr><div>
         <h2>Déjà inscrit ?</h2>
         <br>
         <form action='conn-compte.php' method='post'>
@@ -46,9 +46,9 @@
 
           <input type='submit' value='Se connecter'>
         </form>
-      </div>
+      </div></tr>
     </div>
   </div>
-  
+</table>
   </body>
 </html>
