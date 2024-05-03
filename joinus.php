@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join us</title>
+    <title>Nous contacter</title>
     <style>
         html, body {
             margin: 0;
             padding: 0;
             height: 100%;
             width: 100%;
+            background-color: yellow;
         }
 
         table {
@@ -91,7 +92,7 @@
     <tr>
         <td><button onclick="window.location.href='reservation.php'">Réservez ICI</button></td>
         <td><button onclick="window.location.href='aboutus.php'">Et nous?</button></td>
-        <td><button onclick="window.location.href='joinus.php'">Nous rejoindre!</button></td>
+        <td><button onclick="window.location.href='joinus.php'">Contacter nous</button></td>
         <td><button onclick="window.location.href='compte.php'">Mon compte</button></td>
         <td><button onclick="window.location.href='accueil.php'"><img src="IMG/LogoAccueil.png" alt="Logo"></button></td>
     </tr>
@@ -104,17 +105,14 @@
                         <label for="name">Nom et Prénom</label>
                         <input type="text" id="name" name="name" required>
 
+                        <label for="prenom"> Prénom</label>
+                        <input type="text" id="prenom" name="prenom" required>
+
                         <label for="phone">Téléphone</label>
                         <input type="tel" id="phone" required>
 
-                        <label for="postal-code">Code postal</label>
-                        <input type="text" id="postal-code" required>
-
                         <label for="email">E-mail</label>
                         <input type="email" id="email" required>
-
-                        <label for="centre">Centre</label>
-                        <input type="text" id="centre" required>
 
                         <label for="subject">Objet</label>
                         <input type="text" id="subject" required>
