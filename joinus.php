@@ -98,6 +98,7 @@
     <tr>
         <td colspan="5">
             <div class="form-container">
+            <form action="/submit" method="post">    
                 <div class="form-row"> 
                     <div class="form-left">
                         <label for="name">Nom et Prénom</label>
@@ -129,6 +130,7 @@
                         <button type="submit">Envoyer</button>
                     </div>
                 </div>
+            </form>
             </div>
         </td>
     </tr>
