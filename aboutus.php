@@ -11,15 +11,9 @@
 
 <table>
     <tr>
-       
-        <td><button onclick="window.location.href='reservation.php'">Réservez ICI</button></td>
-        <td><button onclick="window.location.href='aboutus.php'">Et nous?</button></td>
-        <td> <button onclick="window.location.href='joinus.php'">Contacter nous</button></td>
-        <td><button onclick="window.location.href='compte.php'">Mon compte</button></td>
-        <td><button onclick="window.location.href='accueil.php'"><img src="IMG/LogoAccueil.png" alt="Logo"></button></td>
+        <?php include 'barre-menu.php'; ?>
     </tr>
     <tr>
-       
         <td colspan="5"><h1>Qui sommes nous ?</h1>
         <p>Bienvenue dans notre escape game situé au coeur de Paris Nanterre.<br><br>Préparez-vous à relever des défis dans nos X salles d'évasion immersives, pleines de mystères et de mécanismes ingénieux, conçues pour vous plonger dans des univers uniques.<br><br> Que vous soyez un groupe de 4 à 10 joueurs, vous devrez collaborer, résoudre des énigmes, et trouver des indices pour vous échapper dans le temps imparti.<br><br>Nos escape games sont adaptés à tous les âges et niveaux d'expérience. Que vous soyez un groupe d'amis, une famille, ou des collègues en quête d'un team building original, des aventures mémorables vous attendent.<br><br>Relevez le défi et testez votre ingéniosité dans nos escape games… Oserez-vous vous évader avant la fin du temps imparti ?</p>
         <h2>Notre équipe</h2>

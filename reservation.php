@@ -26,7 +26,7 @@ if (!isset($_SESSION['id_client'])) {
 <body>
 
 <table>
-        <tr>
+        <tr> <!-- Modifier ci-dessous par < ?php include 'barre-menu.php';?> Attendre Sylvain -->
             <td><button onclick="window.location.href='reservation.php'">Réservez ICI</button></td>
             <td><button onclick="window.location.href='aboutus.php'">Et nous?</button></td>
             <td><button onclick="window.location.href='joinus.php'">Contacter nous</button></td>

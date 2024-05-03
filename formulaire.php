@@ -10,7 +10,7 @@
 <body>
   <section style="height: 80px;">
     <?php 
-    include 'barre-menu.php'; 
+      include 'barre-menu.php'; 
     ?>
   </section>
 
