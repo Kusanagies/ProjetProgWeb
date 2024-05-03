@@ -33,26 +33,30 @@ if (!isset($_SESSION['id_client'])) {
             <td><button onclick="window.location.href='compte.php'">Mon compte</button></td>
             <td><button onclick="window.location.href='accueil.php'"><img src="IMG/LogoAccueil.png" alt="Logo"></button></td>
         </tr>
+        <tr> <!-- Deuxième ligne pour le contenu principal -->
+            <td colspan="5"> <!-- Utilisation de colspan pour couvrir toute la ligne -->
+                <div class="container"> <!-- Conteneur pour le contenu -->
+                    <h1>Réserver une date pour votre activité</h1>
+                    <form action="reserve.php" method="POST"> <!-- Formulaire -->
+                        <label pour="Jeux">Choisissez le jeu :</label>
+                        <select id="Jeux" name="idJeux"> <!-- Choix du jeu -->
+                        <option value="1">Avion</option>
+                        <option value="2">Hélicoptère</option>
+                    </select>
+                    <br>
+                    <label pour="date">Choisissez une date :</label>
+                    <input type="date" id="date" name="date" required> <!-- Date à choisir -->
+                    <br>
+                    <input type="submit" value="Réserver"> <!-- Bouton de soumission -->
+                    </form>
+                </div>
+            </td>
+        </tr>
     
 
 
 </table>
 
-<div class="container">
-    <h1>Réserver une date pour votre activité</h1>
-    <form action="reserve.php" method="POST">
-        <label for="Jeux">Choisissez le jeu :</label>
-        <select id="Jeux" name="idJeux">
-            <option value="1">Avion</option>
-            <option value="2">Hélicoptère</option>
-        </select>
-        <br>
-        <label pour="date">Choisissez une date :</label>
-        <input type="date" id="date" name="date" required>
-        <br>
-        <input type="submit" value="Réserver">
-    </form>
-</div>
 
 </body>
 </html>
