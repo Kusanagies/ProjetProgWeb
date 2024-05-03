@@ -8,7 +8,30 @@
 </head>
  <style>
 
-</style>
+
+      
+        table {
+            width: 100%;
+            height: 100%;
+            border-collapse: collapse; 
+        }
+
+       
+        td {
+            border: 1px solid black; 
+            text-align: center;     
+            vertical-align: middle; 
+        }
+
+       
+        tr:first-child {
+            height: 10%; 
+        }
+        
+        tr:last-child {
+            height: 90%; 
+        }
+    </style>
 <body>
 
 <table>
