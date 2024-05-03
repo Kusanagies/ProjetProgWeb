@@ -18,7 +18,7 @@ if (isset($_SESSION['id_client'])) {
 <body>
 
 <table>
-<tr>
+    <tr class="menu">
         <td><button onclick="window.location.href='reservation.php'">Réservez ICI</button></td>
         <td><button onclick="window.location.href='aboutus.php'">Et nous?</button></td>
         <td><button onclick="window.location.href='joinus.php'">Contacter nous</button></td>

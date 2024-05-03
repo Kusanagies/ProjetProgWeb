@@ -14,24 +14,32 @@
         }
 
         table {
-            width: 100%;
-            height: 100%;
-            border-collapse: collapse;
-       
+            width: 100%; /* Prendre toute la largeur */
+            height: 100%; /* Prendre toute la hauteur */
+            table-layout: fixed; /* Assurer une répartition fixe des cellules */
+            border-collapse: collapse; /* Éliminer l'espace entre les cellules */
         }
 
         td {
-            text-align: center;
-            vertical-align: middle;
-            border-bottom: 1px solid black;
+            text-align: center; /* Aligner le contenu au centre */
+            vertical-align: middle; /* Aligner verticalement */
+            padding: 10px; /* Espacement intérieur */
+            border: none; /* Pas de bordure par défaut */
         }
 
-        .form-container {
-            display: flex;
-            flex-direction: column;
-            padding: 20px;
-            gap: 20px; 
+        tr:first-child {
+            height: 10%; /* Définir la hauteur de la première ligne */
         }
+        
+        tr:last-child {
+            height: 90%; /* Définir la hauteur de la dernière ligne */
+        }
+        
+        .menu {
+            height: 10%; 
+            border-bottom: 1px solid black;
+    
+        }       
 
         .form-row {
             display: flex;
@@ -93,7 +101,7 @@
 <body>
 
 <table>
-    <tr>
+    <tr class="menu">
         <td><button onclick="window.location.href='reservation.php'">Réservez ICI</button></td>
         <td><button onclick="window.location.href='aboutus.php'">Et nous?</button></td>
         <td><button onclick="window.location.href='joinus.php'">Contacter nous</button></td>

@@ -9,7 +9,7 @@
 <body>
 
 <table>
-    <tr> <!-- Première ligne avec des boutons -->
+    <tr class="menu"> <!-- Première ligne avec des boutons -->
         <td><button onclick="window.location.href='reservation.php'">Réservez ICI</button></td>
         <td><button onclick="window.location.href='aboutus.php'">Et nous?</button></td>
         <td><button onclick="window.location.href='joinus.php'">Contacter nous</button></td>

@@ -10,28 +10,32 @@ body, html {
     background-color: rgb(220, 220, 78);
 }
 
-table {
-    width: 100%;
-    height: 100%;
-    border-collapse: collapse;
-    border: none;
-}
-
-
-td {
-    border: none ; 
-    text-align: center;      
-    vertical-align: middle; 
-}
-
-
-tr:first-child {
+.menu {
     height: 10%; 
     border-bottom: 1px solid black;
+    
+}
+
+table {
+    width: 100%; /* Prendre toute la largeur */
+    height: 100%; /* Prendre toute la hauteur */
+    table-layout: fixed; /* Assurer une répartition fixe des cellules */
+    border-collapse: collapse; /* Éliminer l'espace entre les cellules */
+}
+
+td {
+    text-align: center; /* Aligner le contenu au centre */
+    vertical-align: middle; /* Aligner verticalement */
+    padding: 10px; /* Espacement intérieur */
+    border: none; /* Pas de bordure par défaut */
+}
+
+tr:first-child {
+    height: 10%; /* Définir la hauteur de la première ligne */
 }
 
 tr:last-child {
-    height: 90%; 
+    height: 90%; /* Définir la hauteur de la dernière ligne */
 }
 
 /* Styling the header */
