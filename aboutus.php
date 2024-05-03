@@ -11,7 +11,11 @@
 
 <table>
     <tr>
-        <?php include 'barre-menu.php'; ?>
+        <td><button onclick="window.location.href='reservation.php'">Réservez ICI</button></td>
+        <td><button onclick="window.location.href='aboutus.php'">Et nous?</button></td>
+        <td> <button onclick="window.location.href='joinus.php'">Contacter nous</button></td>
+        <td><button onclick="window.location.href='compte.php'">Mon compte</button></td>
+        <td><button onclick="window.location.href='accueil.php'"><img src="IMG/LogoAccueil.png" alt="Logo"></button></td>
     </tr>
     <tr>
         <td colspan="5"><h1>Qui sommes nous ?</h1>

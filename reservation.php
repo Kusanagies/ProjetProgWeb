@@ -15,13 +15,7 @@ if (!isset($_SESSION['id_client'])) {
     <meta charset="utf-8">
     <title>Réservation d'activité</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Ajoutez des styles CSS pour le menu ou le conteneur principal */
-        .container {
-            padding: 20px;
-            text-align: center;
-        }
-    </style>
+   
 </head>
 <body>
 

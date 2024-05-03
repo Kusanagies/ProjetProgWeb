@@ -5,25 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
     <link href="style.css" rel="stylesheet" type="text/css"/>
-    <style>
-        table {
-            width: 100%; /* Prendre toute la largeur */
-            height: 100%; /* Prendre toute la hauteur */
-            border-collapse: collapse; /* Éliminer les espaces entre les cellules */
-        }
-
-        td {
-            text-align: center; /* Aligner le contenu au centre */
-            vertical-align: middle; /* Aligner verticalement */
-            padding: 10px; /* Espacement intérieur */
-            border: none; /* Pas de bordure par défaut */
-        }
-
-        /* Bordure supérieure entre les lignes */
-        tr:nth-child(2) {
-            border-top: 1px solid black; /* Bordure en haut */
-        }
-    </style>
 </head>
 <body>
 
