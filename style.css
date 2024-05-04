@@ -72,35 +72,6 @@ section {
     opacity: 1; /* Adjust as needed */
 }
 
-/*
- //Styling the navigation bar 
-.navbar {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    margin-bottom: 20px;
-}
-
-// Styling the menu items 
-.navbar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.navbar li {
-    display: inline;
-    margin-right: 10px;
-}
-
-.navbar a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.navbar a:hover {
-    text-decoration: underline;
-}
-*/
 
 /* Styling the main content */
 .accueil {
