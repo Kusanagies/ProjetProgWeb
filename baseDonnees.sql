@@ -3,7 +3,7 @@ CREATE DATABASE projet;
 USE projet; 
 
 CREATE TABLE Jeux (
-	ID_Jeux int  PRIMARY KEY,
+	ID_Jeux int AUTO_INCREMENT PRIMARY KEY,
     Nom_Jeux varchar(50),
     prixJeux int
 );
@@ -15,7 +15,7 @@ CREATE TABLE client(
     motdepasse text(255) NOT NULL
 );
 CREATE TABLE Commandes(
-	id_commande int AUTO_INCREMENT PRIMARY KEY NOT NULL,
+	id_commande int AUTO_INCREMENT PRIMARY KEY,
     ID_Jeux int,
     id_client int,
     dateReservation date,
