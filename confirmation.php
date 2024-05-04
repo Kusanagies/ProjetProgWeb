@@ -28,7 +28,10 @@ if ($result->num_rows > 0) {
     $row_jeu = $result_jeu->fetch_assoc();
     $nomJeu = $row_jeu['Nom_Jeux'];
 
-    echo "Confirmation de réservation pour le jeu $nomJeu le $dateReservation.";
+    // Déterminez quelle image afficher en fonction de l'ID du jeu
+    $image = ($idJeux == 1) ? "IMG/AvionDescription.jpg" : "IMG/BaseMilitaireDescription.jpg";
+
+    echo "Confirmation de réservation pour le jeu $nomJeu le $dateReservation: <img src='$image' alt='Image du jeu'>";
     
     // Redirigez l'utilisateur vers la page d'accueil après 10 secondes
     echo '<meta http-equiv="refresh" content="10;url=accueil.php">';
@@ -38,4 +41,3 @@ if ($result->num_rows > 0) {
 
 $conn->close();
 ?>
-
