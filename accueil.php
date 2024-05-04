@@ -5,6 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
     <link href="style.css" rel="stylesheet" type="text/css"/>
+    <style>
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        .slide {
+            display: none;
+        }
+
+        .visible {
+            display: block;
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0.4;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .throbber {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 5px;
+            background-color: #ccc;
+            border-radius: 10px;
+            animation: throb 5s linear infinite;
+        }
+
+        @keyframes throb {
+            0% { width: 0; }
+            100% { width: 100%; }
+        }
+    </style>
 </head>
 <body>
 
@@ -45,18 +91,36 @@ Alors, êtes-vous prêt à relever le défi ? Venez découvrir votre prochain es
     </tr>
     <tr >
         <td colspan="5">
-            <h1>Voici nos salles d'escape game !</h1>
-            <div class="center-container"> 
-                <a href="avion-description.php" class="image-link">
-                    <img src="IMG/AvionDescription.webp" alt="Escape game Avion">
-                </a>
-                <a href="avion-description.php" class="image-link">
-                    <img src="IMG/AvionDescription.webp" alt="Escape game Avion">
-                </a>
+            <h1>Voici le site de réservation pour x escape game</h1>
+            <div class="center-container"> <!-- Flexbox pour centrer -->
+                <div class="slideshow-container">
+                    <div class="slide fade visible">
+                        <a href="avion-description.php" class="image-link">
+                            <img src="IMG/AvionDescription.webp" alt="Escape game Avion">
+                        </a>
+                    </div>
+                    <div class="slide fade">
+                        <a href="basemilitaire-description.php" class="image-link">
+                            <img src="IMG/BaseMilitaireDescription.webp" alt="Escape game Base militaire">
+                        </a>
+                    </div>
+                    <div class="slide fade">
+                        <a href="autre-image2-description.php" class="image-link">
+                            <img src="IMG/AutreImage2.webp" alt="Autre escape game">
+                        </a>
+                    </div>
+                </div>
+                <div class="throbber"></div>
             </div>
         </td>
     </tr>
 </table>
+
+<script src="script.js"></script>
+<script>
+    // Afficher la première image immédiatement
+    document.querySelector('.slide').classList.add('visible');
+</script>
 
 </body>
 </html>
