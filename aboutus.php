@@ -27,15 +27,15 @@
         <td><h3>Orhy Elgoyhen</h3></td>
         <td><h3>Zheng Franck</h3></td>
         <td><h3>Sylvain Huang</h3></td>
-        <td><h3>nom</h3></td>
-        <td><h3>prenom</h3></td>
+        <td><h3>Tom Bensallem</h3></td>
+        <td><h3>Aloys Barbier</h3></td>
     </tr>
     <tr>
         <td>Gérant</td>
         <td>Animateur</td>
         <td>Manager</td>
-        <td>nom</td>
-        <td>prenom</td>
+        <td>Animateur</td>
+        <td>Animateur</td>
     </tr>
 </table>
    

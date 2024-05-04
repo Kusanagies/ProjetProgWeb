@@ -206,3 +206,19 @@ p {
     font-family: Arial, sans-serif; /* Police lisible */
     font-size: 16px; /* Taille du texte */
 }
+
+.center-container {
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    gap: 10px; /* Espace entre les éléments */
+}
+
+.image-link {
+    text-decoration: none;
+}
+
+.image-link img {
+    max-width: 500px; /* Ajustez la taille selon votre besoin */
+    height: auto;
+}
