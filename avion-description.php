@@ -30,7 +30,7 @@
                         <!-- Ajoutez d'autres informations pertinentes ici -->
                     </ul>
                 
-                    <h2>Réservez dès maintenant !</h2>
+                    <h2><a href="reservation.php">Réservez ICI maintenant !</h2>
                 </div>
             </td>
         </tr>
