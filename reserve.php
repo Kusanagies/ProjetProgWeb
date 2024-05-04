@@ -29,10 +29,10 @@ $idClient = $conn->real_escape_string($idClient);
 
 // Insérez la réservation dans la table 'Commandes'
 
-$sql = "INSERT INTO Commandes (ID_Jeux,id_client, dateReservation) VALUES ('$idJeux','$idClient', '$selectedDate')";
+$sql = "INSERT INTO Commandes (ID_Jeux, id_Client, dateReservation) VALUES ('$idJeux', '$idClient', '$selectedDate')";
 if ($conn->query($sql) === TRUE) {
     // Redirigez l'utilisateur vers la page de confirmation
-    header('Location: confirmation.php');
+    header("Location: confirmation.php?date=" . urlencode($selectedDate) . "&idJeux=" . urlencode($idJeux));
 } else {
     // Affichez un message d'erreur en cas d'échec de la requête
     echo "Erreur lors de l'exécution de la requête : " . $conn->error;

@@ -3,7 +3,7 @@ CREATE DATABASE projet;
 USE projet; 
 
 CREATE TABLE Jeux (
-	ID_Jeux int AUTO_INCREMENT PRIMARY KEY,
+	ID_Jeux int  PRIMARY KEY,
     Nom_Jeux varchar(50),
     prixJeux int
 );
@@ -15,7 +15,7 @@ CREATE TABLE client(
     motdepasse text(255) NOT NULL
 );
 CREATE TABLE Commandes(
-	id_commande int AUTO_INCREMENT PRIMARY KEY,
+	id_commande int AUTO_INCREMENT PRIMARY KEY NOT NULL,
     ID_Jeux int,
     id_client int,
     dateReservation date,
@@ -31,7 +31,7 @@ CREATE TABLE JOINUS(
     email text(255),
     objet text(255),
     comment text(3000)
-)
+);
 
 INSERT INTO Jeux VALUES (1,"Avion","20");
 INSERT INTO Jeux VALUES (2,"Base_militaire","30");

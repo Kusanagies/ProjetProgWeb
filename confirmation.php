@@ -19,8 +19,9 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // Affichez les détails de la réservation (une seule fois)
     $row = $result->fetch_assoc();
-    $idJeux = $row['ID_Jeux'];
-    $dateReservation = $row['dateReservation'];
+    $idJeux = urldecode($_GET['idJeux']);
+    $dateReservation = urldecode($_GET['date']);
+
 
     // Récupérez le nom du jeu à partir de la table des jeux (remplacez 'Jeux' par le nom de votre table)
     $sql_jeu = "SELECT Nom_Jeux FROM Jeux WHERE ID_Jeux = '$idJeux'";
@@ -29,10 +30,7 @@ if ($result->num_rows > 0) {
     $nomJeu = $row_jeu['Nom_Jeux'];
 
     // Déterminez quelle image afficher en fonction de l'ID du jeu
-    $image = ($idJeux == 1) ? "IMG/AvionDescription.jpg" : "IMG/BaseMilitaireDescription.jpg";
-
-    echo "Confirmation de réservation pour le jeu $nomJeu le $dateReservation: <img src='$image' alt='Image du jeu'>";
-    
+    echo "Confirmation de réservation pour le jeu $nomJeu le $dateReservation.";
     // Redirigez l'utilisateur vers la page d'accueil après 10 secondes
     echo '<meta http-equiv="refresh" content="10;url=accueil.php">';
 } else {
