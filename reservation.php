@@ -20,7 +20,7 @@ if (!isset($_SESSION['id_client'])) {
 <body>
 
 <table >
-        <tr class="menu"> <!-- Modifier ci-dessous par < ?php include 'barre-menu.php';?> Attendre Sylvain -->
+        <tr class="menu">
             <td><button onclick="window.location.href='reservation.php'">Réservez ICI</button></td>
             <td><button onclick="window.location.href='aboutus.php'">Et nous?</button></td>
             <td><button onclick="window.location.href='joinus.php'">Contacter nous</button></td>
@@ -35,7 +35,9 @@ if (!isset($_SESSION['id_client'])) {
                         <label pour="Jeux">Choisissez le jeu :</label>
                         <select id="Jeux" name="idJeux"> <!-- Choix du jeu -->
                         <option value="1">Avion</option>
-                        <option value="2">Hélicoptère</option>
+                        <option value="2">Base militaire</option>
+                        <option value="3">Enquête de meurtre</option>
+                        <option value="4">Château hanté</option>
                     </select>
                     <br>
                     <label pour="date">Choisissez une date :</label>

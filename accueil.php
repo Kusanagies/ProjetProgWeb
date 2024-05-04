@@ -50,12 +50,22 @@
             0% { width: 0; }
             100% { width: 100%; }
         }
+
+        .image-link-v1 img{
+            max-width: auto; 
+            max-height: 500px;
+        }
+
+        .image-link-v2 img{
+            max-width: auto; 
+            height: auto;
+        }
     </style>
 </head>
 <body>
 
 <table>
-    <tr class="menu"> <!-- Première ligne avec des boutons -->
+    <tr class="menu">
         <td><button onclick="window.location.href='reservation.php'">Réservez ICI</button></td>
         <td><button onclick="window.location.href='aboutus.php'">Et nous?</button></td>
         <td><button onclick="window.location.href='joinus.php'">Contacter nous</button></td>
@@ -91,7 +101,7 @@ Alors, êtes-vous prêt à relever le défi ? Venez découvrir votre prochain es
     </tr>
     <tr >
         <td colspan="5">
-            <h1>Voici le site de réservation pour x escape game</h1>
+            <h1>Voici le site de réservation pour 4 escape game</h1>
             <div class="center-container"> <!-- Flexbox pour centrer -->
                 <div class="slideshow-container">
                     <div class="slide fade visible">
@@ -100,13 +110,18 @@ Alors, êtes-vous prêt à relever le défi ? Venez découvrir votre prochain es
                         </a>
                     </div>
                     <div class="slide fade">
-                        <a href="basemilitaire-description.php" class="image-link">
+                        <a href="basemilitaire-description.php" class="image-link-v1">
                             <img src="IMG/BaseMilitaireDescription.webp" alt="Escape game Base militaire">
                         </a>
                     </div>
                     <div class="slide fade">
-                        <a href="autre-image2-description.php" class="image-link">
-                            <img src="IMG/AutreImage2.webp" alt="Autre escape game">
+                        <a href="crime-description.php" class="image-link">
+                            <img src="IMG/Crime.webp" alt="Escape game Enquête de meurtre">
+                        </a>
+                    </div>
+                    <div class="slide fade">
+                        <a href="chateau-description.php" class="image-link-v2">
+                            <img src="IMG/ChateauHante.webp" alt="Escape game Château hanté">
                         </a>
                     </div>
                 </div>

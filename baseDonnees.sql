@@ -33,6 +33,7 @@ CREATE TABLE JOINUS(
     comment text(3000)
 )
 
-INSERT INTO Jeux VALUES (1,"Avion","10");
-INSERT INTO Jeux VALUES (2,"Helicoptere","60");
-
+INSERT INTO Jeux VALUES (1,"Avion","20");
+INSERT INTO Jeux VALUES (2,"Base_militaire","30");
+INSERT INTO Jeux VALUES (3,"Enquete_de_meurtre","12");
+INSERT INTO Jeux VALUES (4,"Chateau_hante","25");

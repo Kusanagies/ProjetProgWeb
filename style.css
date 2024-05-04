@@ -1,5 +1,4 @@
-
-/* Setting default font family and size */
+/* Parametre par default: font family and size */
 body, html {
     margin: 0;
     padding: 0;
@@ -38,7 +37,7 @@ tr:last-child {
     height: 90%; /* Définir la hauteur de la dernière ligne */
 }
 
-/* Styling the header */
+/* Style pour header 1 */
 h1 {
     font-size: 24px;
     font-weight: bold;
@@ -46,7 +45,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Styling links */
+/* Style pour liens */
 a {
     color: #007bff;
     text-decoration: none;
@@ -56,13 +55,13 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Styling the main section */
+/* Style pour section */
 section {
     position: relative;
     padding: 20px;
 }
 
-/* Styling the background image */
+/* Style pour background */
 .bg {
     position: absolute;
     top: 0;
@@ -73,7 +72,8 @@ section {
     opacity: 1; /* Adjust as needed */
 }
 
-/* Styling the navigation bar */
+/*
+ //Styling the navigation bar 
 .navbar {
     background-color: #333;
     color: #fff;
@@ -81,7 +81,7 @@ section {
     margin-bottom: 20px;
 }
 
-/* Styling the menu items */
+// Styling the menu items 
 .navbar ul {
     list-style-type: none;
     padding: 0;
@@ -100,6 +100,7 @@ section {
 .navbar a:hover {
     text-decoration: underline;
 }
+*/
 
 /* Styling the main content */
 .accueil {
@@ -108,7 +109,6 @@ section {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-/* Réinitialisation des styles par défaut des éléments de formulaire */
 
 
 /* Style pour les liens dans le formulaire */
@@ -128,15 +128,12 @@ a:visited {
     color: purple;
 }
 
-/* Exemple de mise en forme d'un formulaire */
+/* Mise en forme d'un formulaire */
 form {
     width: 300px;
     margin: 0 auto;
     font-family: sans-serif;
-    /* Ajoutez d'autres styles ici selon vos besoins */
 }
-
-/* Style pour les paragraphes */
 
 
 .form-container {
@@ -203,8 +200,8 @@ p {
     text-align: left; /* Alignement à gauche */
     line-height: 1.5; /* Espace entre les lignes */
     margin: 10px 0; /* Espacement supérieur et inférieur */
-    font-family: Arial, sans-serif; /* Police lisible */
-    font-size: 16px; /* Taille du texte */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
 }
 
 .center-container {
@@ -219,6 +216,10 @@ p {
 }
 
 .image-link img {
-    max-width: 500px; /* Ajustez la taille selon votre besoin */
+    max-width: 500px; 
     height: auto;
+}
+
+.description-liste {
+    text-align: left; /* Aligner vers la gauche */
 }
