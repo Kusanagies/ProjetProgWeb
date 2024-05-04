@@ -111,7 +111,7 @@
     <tr>
         <td colspan="5">
             <div class="form-container">
-                <p>Vous avez quelque choise à nous dire? Dites le nous ici!</p>
+                <h1>Vous avez quelque choise à nous dire? Dites le nous ici!</h1>
                 <form action="/submit" method="post" onsubmit="return validateForm()"> <!-- Validation à la soumission -->
                     <div class="form-row">
                         <div class="form-left">
